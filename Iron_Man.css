@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    scroll-padding-top: 2rem;
+}
+body{
+    min-height: 100vh;
+    background-color: #222;
+    transition: 1s all linear;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 100px;
+    position: fixed;
+    z-index: 100000;
+    background-color: brown;
+    align-items: center;
+
+    
+
+}
+.logo{
+    color: aliceblue;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+header nav{
+    display: flex;
+    transition: 0.8s all linear;
+   
+   
+} 
+
+#moon{
+    display: none;
+}
+header nav a {
+    transition: 1s all linear;
+    padding: 0.7rem 1.4rem;
+    color: white;
+    border-radius: 0.5rem;
+    margin-right: 15px;
+    text-decoration: none;
+}
+header nav a:hover{
+    transition: 1s all linear;
+    background-color: deeppink;
+}
+#hm{
+    padding: 0.7rem 1.4rem;
+    background-color: deeppink;
+}
+.social{
+    display: flex;
+
+}
+.social a{
+    margin-right: 27px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+.fa-telegram{
+    transition: 1s all linear;
+}
+.fa-telegram:hover{
+    transition: 1s all linear;
+    transform: rotate(20deg);
+    color: blue;
+}
+.fa-instagram{
+    transition: 1s all linear;
+}
+.fa-instagram:hover{
+    transition: 1s all linear;
+    transform: rotate(20deg);
+    color: deeppink;
+}
+.fa-whatsapp{
+    transition: 1s all linear;
+}
+.fa-whatsapp:hover{
+    transition: 1s all linear;
+    color: green;
+    transform: rotate(20deg);
+}
+
+.main{
+
+    width: 100%;
+    height: 100vh;
+    padding: 150px 50px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.img_ironman{
+    width: 350px;
+    height: 300px;
+    border: 2px solid brown;
+    border-radius: 50%;
+    scale: 0;
+    transition: 1.5s all linear;
+   
+}
+.img_ironman img{
+    width: 100%;
+    height: 100%;
+    position: center;
+    border-radius: 50%;
+    scale: 0;
+    transition: 1s all linear;
+    
+}
+.texts{
+    scale: 0;
+    transition: 1.5s all linear;
+}
+.texts h2{
+    color: deeppink;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    
+
+}
+.texts h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+}
+.texts h4{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+.texts span{
+    color: deeppink;
+}
+.btns{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+.btns .btn{
+    margin-right: 25px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: 1s all linear;
+    border: 2px solid deeppink;
+    text-decoration: none;
+    color: white;
+
+
+}
+.btns .btn:hover{
+    transition: 1s all linear;
+    background-color: deeppink;
+}
+
+
+.btns .btn2{
+    margin-right: 25px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: 1s all linear;
+    border: 2px solid green;
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.btns .btn2:hover{
+    transition: 1s all linear;
+    background-color: green;
+}
+.arrowdown{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+}
+.arrowdown #ihov{
+    transition: 1s all linear;
+    font-size: 1.5rem;
+    font-size: 700;
+    color: white;
+    padding: 0.5rem 1.9rem;
+    cursor: pointer;
+
+}
+
+
+@media(max-width:500px){
+   header{
+    padding: 1px 10px;
+    flex-direction: column;
+    align-items: normal;
+    background-color: brown;
+
+   }
+   .logo{
+    margin-bottom: 15px;
+    margin-top: 12px;
+   }
+   header nav{
+    margin-bottom: 1px;
+   }
+   #sun{
+    font-size: 1.5rem;
+   }
+   #moon{
+    font-size: 1.5rem;
+   }
+   .contact{
+    flex-direction: row;
+   }
+   .social{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 5px;
+   }
+   .main{
+    padding: 200px 25px;
+   }
+   .btns a{ 
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+
+   }
+   .texts{
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 20px;
+   }
+  
+
+
+   .img_ironman{
+    width: 350px;
+    height: 300px;
+    border: 2px solid brown;
+    border-radius: 50%;
+    scale: 0;
+    transition: 1s all linear;
+   
+}
+.img_ironman img{
+    width: 100%;
+    height: 100%;
+    position: center;
+    border-radius: 50%;
+    scale: 0;
+    transition: 1s all linear;
+    
+}
+  
+}
+
+
+.projects{
+    width: 100%;
+    height: 100vh;
+    padding: 100px 50px;
+}
+.index{
+    color: aliceblue;
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000000;
+}
+
+.projects h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 15px;
+    padding-top: 62px;
+}
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cont .cards{
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    margin-left: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 1s all linear;
+    border-radius: 0.5rem;
+    scale: 0.8;
+
+}
+.cont .cards:hover{
+    transition: 1s all linear;
+    scale: 0.9;
+}
+.cards p{
+    position: absolute;
+    padding-top: 25%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    display: none;
+
+}
+.cards a{
+    position: absolute;
+    text-decoration: none;
+    margin-top: 80%;
+    display: flex;
+    padding-left: 30%;
+    color: black;
+    transition: 1s all linear;
+}
+.cards a:hover{
+    transition: 1s all linear;
+    color: white;
+    
+}
+.cont .cards img{
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 100%;
+}
+
+
+
+.cards h2{
+    position: absolute;
+    padding-top: 15px;
+    height: 0px;
+    width: 245px;
+    border-radius: 0.5rem;
+    background-color: rgba(205, 140, 125, 0.8);
+    background: none;
+    scale: 1;
+    transition: 1s all linear;
+    display: flex;
+    color:white;
+    justify-content: center;
+    
+}
+
+
+@media(max-width:500px){
+   
+.projects h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 45px;
+    padding-top: 162px;
+}
+.projects{
+    padding: 10px 70px;
+}
+
+}
+
+
+@media(width:500px){
+    .projects h1{
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin-bottom: 45px;
+        padding-top: 162px;
+    }
+    .projects{
+        padding: 10px 100px;
+    }
+    
+}
+@media(max-width:390px){
+    .projects{
+        padding: 10px 40px;
+    }
+
+}
+@media(max-width:360px){
+    header{
+        padding: 1px 10px;
+        flex-direction: column;
+        align-items: normal;
+        background-color: brown;
+    
+    }
+    header nav a {
+        transition: 1s all linear;
+        padding: 0.4rem 1rem;
+        color: white;
+        border-radius: 0.5rem;
+        margin-right: 4px;
+        text-decoration: none;
+    }
+    header nav{
+        margin-bottom: 5px;
+    }
+}
+
+
+
